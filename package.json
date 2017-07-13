@@ -1,0 +1,19 @@
+{
+  "name": "flask-like",
+  "version": "1.0.0",
+  "main": "./server/main.ts",
+  "scripts": {
+    "start": "node ./server/main.js",
+    "develop": "devtool ./server/main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@conical/core": "./node_modules/@conical/core",
+    "@conical/logger": "./node_modules/@conical/logger"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.10"
+  },
+  "description": ""
+}

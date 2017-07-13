@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "strict": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "noImplicitAny": false,
+    "rootDir": ".",
+    "paths": {
+        "@conical/core":[
+            "node_modules/@conical/core"
+        ]
+    }
+  },
+  "files": [
+      "./server/main.ts"
+  ],
+  "include": [
+      "server/**/*",
+      "node_modules/@conical/**/*"
+  ],
+  "exclude": [
+      "node_modules/@conical/core/interfaces/**/*"
+  ]
+}
