@@ -1,14 +1,15 @@
 import * as app from "@conical/core";
 
 @app.mount({
-    views:[
-        "views"
+    locator:module,
+    localViews:[
+        "views",
     ],
     url:"/"
 })
 export class AppMount{
     @app.route("/") root(req, res){
-        return "html.html"
+        return "index.html"
     }
 
     @app.route("/foo") foo(){

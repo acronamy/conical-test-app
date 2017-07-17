@@ -9,6 +9,15 @@ import { AdminMount } from "./admin/admin.mount";
     declarations:[
         AppMount,
         AdminMount
+    ],
+    systemPages:{
+        forbidden_403:"",
+    },
+    globalViews:[
+        "views"
+    ],
+    globalProviders:[
+
     ]
 })
 export class ServerModule{  }

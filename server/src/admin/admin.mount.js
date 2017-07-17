@@ -32,9 +32,12 @@ __decorate([
 ], AdminMount.prototype, "foo", null);
 AdminMount = __decorate([
     app.mount({
-        views: "views",
+        locator: module,
+        localViews: [
+            "views"
+        ],
         url: "/admin",
-        providers: []
+        localProviders: []
     })
 ], AdminMount);
 exports.AdminMount = AdminMount;

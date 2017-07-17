@@ -1,10 +1,13 @@
 import * as app from "@conical/core";
 
 @app.mount({
-    views:"views",
+    locator:module,
+    localViews:[
+        "views"
+    ],
     url:"/admin",
-    providers:[
-
+    localProviders:[
+        
     ]
 })
 export class AdminMount{

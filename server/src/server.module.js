@@ -18,7 +18,14 @@ ServerModule = __decorate([
         declarations: [
             server_mount_1.AppMount,
             admin_mount_1.AdminMount
-        ]
+        ],
+        systemPages: {
+            forbidden_403: "",
+        },
+        globalViews: [
+            "views"
+        ],
+        globalProviders: []
     })
 ], ServerModule);
 exports.ServerModule = ServerModule;
