@@ -12,10 +12,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const app = require("@conical/core");
 let AppMount = class AppMount {
     root(req, res) {
-        return "./index/html.html";
+        return "html.html";
     }
     foo() {
-        return "./foo.html";
+        return "foo.html";
     }
 };
 __decorate([
@@ -33,9 +33,9 @@ __decorate([
 AppMount = __decorate([
     app.mount({
         views: [
-            "views/app"
+            "views"
         ],
-        path: "/"
+        url: "/"
     })
 ], AppMount);
 exports.AppMount = AppMount;

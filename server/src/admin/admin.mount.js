@@ -12,20 +12,20 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const app = require("@conical/core");
 let AdminMount = class AdminMount {
     root(req, res) {
-        return "./index/html.html";
+        return "html.html";
     }
     foo(req, res) {
-        return "./index/foo.html";
+        return "foo.html";
     }
 };
 __decorate([
-    app.route("/admin"),
+    app.route("/"),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object, Object]),
     __metadata("design:returntype", void 0)
 ], AdminMount.prototype, "root", null);
 __decorate([
-    app.route("/admin/yeah"),
+    app.route("/yeah"),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object, Object]),
     __metadata("design:returntype", void 0)
@@ -33,7 +33,7 @@ __decorate([
 AdminMount = __decorate([
     app.mount({
         views: "views",
-        path: "/admin",
+        url: "/admin",
         providers: []
     })
 ], AdminMount);
